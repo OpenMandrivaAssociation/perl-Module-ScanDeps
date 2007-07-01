@@ -17,7 +17,7 @@ Source:		http://www.cpan.org/modules/by-module/%{modprefix}/%{module}-%{version}
 Buildrequires:	perl-devel >= 5.4
 %endif
 BuildRequires:	perl(File::Temp)
-Requires:	perl >= 5.4
+BuildRequires:	perl(Module::Build::ModuleInfo)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
