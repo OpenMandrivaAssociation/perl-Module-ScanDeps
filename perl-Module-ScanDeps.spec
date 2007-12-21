@@ -19,6 +19,7 @@ Buildrequires:	perl-devel >= 5.4
 BuildRequires:	perl(File::Temp)
 BuildRequires:	perl(Module::Build::ModuleInfo)
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This is a module to recursively scan Perl programs for dependencies.
