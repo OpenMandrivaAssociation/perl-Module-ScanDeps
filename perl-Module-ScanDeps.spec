@@ -2,7 +2,7 @@
 %define	name	perl-%{module}
 %define	modprefix Module
 
-%define	version	0.81
+%define	version	0.82
 %define	release	%mkrel 1
 
 Version:	%{version}
