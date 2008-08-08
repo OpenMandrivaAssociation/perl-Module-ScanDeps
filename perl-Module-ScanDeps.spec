@@ -3,7 +3,7 @@
 %define	modprefix Module
 
 %define	version	0.84
-%define	release	%mkrel 1
+%define	release	%mkrel 2
 
 Version:	%{version}
 Name:		%{name}
