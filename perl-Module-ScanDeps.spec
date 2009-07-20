@@ -1,21 +1,14 @@
-%define	module	Module-ScanDeps
-%define	name	perl-%{module}
-%define	modprefix Module
+%define upstream_name       Module-ScanDeps
+%define upstream_version    0.93
 
-%define	version	0.91
-%define	release	%mkrel 1
-
-Version:	%{version}
-Name:		%{name}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 Summary:	Recursively scan Perl code for dependencies
 License:	Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/%{modprefix}/%{module}-%{version}.tar.bz2
-%if %{mdkversion} < 1010
-Buildrequires:	perl-devel >= 5.4
-%endif
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source:     http://www.cpan.org/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
 BuildRequires:	perl(File::Temp)
 BuildRequires:	perl(Module::Build::ModuleInfo)
 BuildArch:	noarch
@@ -30,7 +23,7 @@ and App::Packer.  Please see their respective documentations on CPAN for
 further information.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -51,6 +44,4 @@ rm -rf %{buildroot}
 %doc AUTHORS Changes README
 %{_bindir}/*
 %{_mandir}/man*/*
-%{perl_vendorlib}/%{modprefix}
-
-
+%{perl_vendorlib}/Module
