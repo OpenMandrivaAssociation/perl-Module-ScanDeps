@@ -11,6 +11,7 @@ Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Module/Module-ScanDeps-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(File::Temp)
+BuildRequires: perl(Test::Requires)
 BuildRequires:	perl(Module::Build::ModuleInfo)
 BuildRequires:	perl-devel
 
