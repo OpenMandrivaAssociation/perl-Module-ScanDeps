@@ -1,5 +1,5 @@
 %define modname	Module-ScanDeps
-%define modver 1.10
+%define modver 1.13
 
 Summary:	Recursively scan Perl code for dependencies
 Name:		perl-%{modname}
@@ -11,6 +11,7 @@ Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Module/Module-ScanDeps-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(File::Temp)
+BuildRequires: perl(Test::Requires)
 BuildRequires:	perl(Module::Build::ModuleInfo)
 BuildRequires:	perl-devel
 
@@ -41,5 +42,6 @@ further information.
 %{perl_vendorlib}/Module
 %{_mandir}/man1/*
 %{_mandir}/man3/*
+
 
 
