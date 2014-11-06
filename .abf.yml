@@ -3,5 +3,6 @@ removed_sources:
   Module-ScanDeps-1.10.tar.gz: 34af7ba76e9d1f9e3ecc975c9ee240ede522c051
   Module-ScanDeps-1.13.tar.gz: ff3093546fa26608c09550aa8127c067d4938498
   Module-ScanDeps-1.15.tar.gz: e6c03cb17773430414d9d4622ba19846b9bed6e5
-sources:
   Module-ScanDeps-1.16.tar.gz: 92e7ce5ab601b83de7749eaa7bc8d559a1ac0b6a
+sources:
+  Module-ScanDeps-1.17.tar.gz: 22ae247d9600affe6fa401bfacfb6b91df9bad15

@@ -1,5 +1,5 @@
 %define modname	Module-ScanDeps
-%define modver 1.16
+%define modver 1.17
 
 Summary:	Recursively scan Perl code for dependencies
 Name:		perl-%{modname}
