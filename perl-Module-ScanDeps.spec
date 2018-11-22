@@ -1,13 +1,13 @@
 %define modname	Module-ScanDeps
-%define modver 1.24
+%define modver 1.25
 
 Summary:	Recursively scan Perl code for dependencies
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	1
 License:	Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		http://metacpan.org/pod/Module::ScanDeps
 Source0:	http://www.cpan.org/modules/by-module/Module/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(File::Temp)
