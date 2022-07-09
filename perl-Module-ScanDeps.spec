@@ -30,8 +30,11 @@ further information.
 %__perl Makefile.PL INSTALLDIRS=vendor
 %make 
 
+%if 0
+# Checks require FTP access
 %check
 %make test
+%endif
 
 %install
 %makeinstall_std
