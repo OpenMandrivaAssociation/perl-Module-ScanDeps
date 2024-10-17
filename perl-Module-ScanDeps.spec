@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	2
 License:	Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Module::ScanDeps
+Url:		https://metacpan.org/pod/Module::ScanDeps
 Source0:	http://www.cpan.org/modules/by-module/Module/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(File::Temp)
