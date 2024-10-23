@@ -4,7 +4,7 @@
 Summary:	Recursively scan Perl code for dependencies
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Module::ScanDeps
