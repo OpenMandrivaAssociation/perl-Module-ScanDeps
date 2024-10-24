@@ -1,14 +1,13 @@
 %define modname	Module-ScanDeps
-%define modver 1.31
 
 Summary:	Recursively scan Perl code for dependencies
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	3
+Version:	1.35
+Release:	1
 License:	Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Module::ScanDeps
-Source0:	http://www.cpan.org/modules/by-module/Module/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Module/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(File::Temp)
 BuildRequires:	perl(Test::Requires)
@@ -24,11 +23,11 @@ and App::Packer.  Please see their respective documentations on CPAN for
 further information.
 
 %prep
-%setup -qn %{modname}-%{modver} 
+%autosetup -p1 -n %{modname}-%{version} 
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
-%make 
+%make_build
 
 %if 0
 # Checks require FTP access
@@ -37,7 +36,7 @@ further information.
 %endif
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc AUTHORS Changes README
