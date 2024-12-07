@@ -2,7 +2,7 @@
 
 Summary:	Recursively scan Perl code for dependencies
 Name:		perl-%{modname}
-Version:	1.35
+Version:	1.37
 Release:	1
 License:	Artistic
 Group:		Development/Perl
