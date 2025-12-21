@@ -9,6 +9,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/Module::ScanDeps
 Source0:	http://www.cpan.org/modules/by-module/Module/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(File::Temp)
 BuildRequires:	perl(Test::Requires)
 BuildRequires:	perl(Module::Build)
